@@ -6,20 +6,12 @@
     <title>Junior Developer Portfolio</title>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> -->
     <style>
-
-        :root{
-            --bg: #f5f5f5;
-            --text: #222;
+       :root{
+            --bg: #ffffff;
+            --text:#444;
             --card: #ffffff;
             --primary: #444;
         }
-        body.dark{
-            --bg: #121212;
-            --text: #f1f1f1;
-            --card: #1e1e1e;
-            --primary: #888;
-        }
-
 
         /* Navbar */
         .navbar{
@@ -33,7 +25,7 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            z-index: 990;
+            z-index: 999;
         }
         .navbar a{
             color: var(--text);
@@ -82,10 +74,6 @@
             }
         }
 
-
-
-
-
         body {
             margin: 0;
             font-family: Arial, sans-serif;
@@ -125,7 +113,7 @@
             max-width: 600px;
             margin: auto;
             font-size: 16px;
-            opacity: 0.9555559;
+            opacity: 0.9;
         }
 
         .hero-buttons{
@@ -224,17 +212,6 @@
             margin-top: 50px;
         }
 
-        /* Dark mode button
-        #toggleDark{
-            cursor: pointer;
-            padding: 8px 12px;
-            background: var(--primary);
-            color: white;
-            border-radius: 6px;
-            font-size: 14px;
-        } */
-
-
         /* RESPONSIVE DESIGN */
         @media (max-width: 768px) {
             .hero h1{
@@ -288,9 +265,6 @@
         </div>
      </div>
 
-
-
-
     <!-- Hero Section -->
      <section class="hero">
         <h1>Rupom Paul</h1>
@@ -298,21 +272,13 @@
         <p>Enthusiastic and motivated developer with skills in PHP, Laravel, HTML, CSS, MySQL and API development . Passionate about building clean, efficient and user-friendly web applications.</p>
 
         <div class="hero-buttons">
-            <a href="mailto:paulrupom165@gmail.com">
-                <img src="c:\Users\Lenovo\Downloads\email.png" class="icon">
-                Email Me</a>
+            <a href="mailto:paulrupom165@gmail.com">Email Me</a>
 
-            <a href="https://github.com/Rupom-Kumar-Paul" target="_blank">
-                <img src="c:\Users\Lenovo\Downloads\github.png" class="icon">
-                Github</a>
+            <a href="https://github.com/Rupom-Kumar-Paul" target="_blank">Github</a>
 
-            <a href="https://www.linkedin.com/in/rupom-paul-998007341" target="_blank">
-                <img src="c:\Users\Lenovo\Downloads\linkedin.png" class="icon">
-                LinkedIn</a>
+            <a href="https://www.linkedin.com/in/rupom-paul-998007341" target="_blank">LinkedIn</a>
 
-            <a href="cv.pdf" download>
-                <img src="c:\Users\Lenovo\Downloads\downloads.png" class="icon">
-                Download CV</a>
+            <a href="cv.pdf" download>Download CV</a>
         </div>
      </section>
 
@@ -369,13 +335,8 @@
           <script>
             function toggleMenu(){
                 document.getElementById("menu").classList.toggle("open");
-            }
-
-            // // Dark Mode
-            // document.getElementById("toggleDark").onclick = () => {
-            //     document.body.classList.toggle("dark");
-            // }
-
+            };
+        
             // Scroll Animation
             const sections = document.querySelectorAll('.section');
             const reveal = () => {
@@ -388,7 +349,6 @@
             reveal();
           </script>
 
-    
 </body>
 </html>
 
